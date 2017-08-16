@@ -9,17 +9,20 @@ body {
 p {
     margin-top: 0.5em; 
     margin-bottom: 1em; 
-   }
+}
+.clearfix::after {
+content: "";
+display: block;
+clear: both;
+}
 .font{
 	font-weight: bold;
 }
-
 .fullwrap{
 	margin: auto;
 	background: #d1d1d1;
 	width: 760px;	
 }
-
 .wrap{
 	padding: 60px;
 }
@@ -90,12 +93,10 @@ p {
 	margin-top: 15px;
 	font-weight: bold;
 }
-.footer{
+.article{
 	width: 530px;
-	height: 180px;
-	margin-top: 
 }
-.footerEnroll{
+.articleEnroll{
 	width: 530px;
 	height: 35px;
 	background: #cf5b4e;
@@ -103,4 +104,7 @@ p {
 	border-radius: 5px;
 	margin-top: 15px;
 	font-weight: bold;
+}
+footer{
+	padding-top: 20px;
 }
